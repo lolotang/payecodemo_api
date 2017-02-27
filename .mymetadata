@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="payecodemo_qrcode"
+  name="payecodemo_api"
   id="myeclipse.1480391501326"
   context-root="/payecodemo_qrcode"
   j2ee-spec="1.4"
-  archive="payecodemo_qrcode.war">
+  archive="payecodemo_api.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>
