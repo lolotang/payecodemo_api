@@ -1,4 +1,4 @@
-package com.payeco.qrorderen;
+package com.payeco.api;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -41,6 +41,7 @@ public class PlaceOrder {
 		
 		try {
 			String url = "http://test.payeco.com:9080/pay/services/ApiV2ServerRSA";
+			//String url = "http://test.payeco.com:9080/services/ApiV2ServerRSA";
 			String asynAddress = "http://test.payeco.com:9080/payecodemo/servlet/AsynServlet";	//接收异步通知地址
 
 			String GDYILIAN_CERT_PUB_64="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJ1fKGMV/yOUnY1ysFCk0yPP4bfOolC/nTAyHmoser+1yzeLtyYsfitYonFIsXBKoAYwSAhNE+ZSdXZs4A5zt4EKoU+T3IoByCoKgvpCuOx8rgIAqC3O/95pGb9n6rKHR2sz5EPT0aBUUDAB2FJYjA9Sy+kURxa52EOtRKolSmEwIDAQAB";

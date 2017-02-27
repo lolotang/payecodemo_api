@@ -1,4 +1,4 @@
-package com.payeco.qrorderen;
+package com.payeco.api;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,13 +25,13 @@ public class QrcodeRefresh {
 	}
 	
 	/**
-	 * 二维码刷新接口demo，返回格式为xml，微信支付宝原生扫码、微信公众号，无此接口
+	 * 二维码刷新接口demo，返回格式为xml，只用于三码合一扫码方式
 	 */
 	public void  assemble(){
 		
 		try {
-			String url = "http://test.payeco.com:9080/PayEcoChannel/payeco/ApiPayecoServerRSA";
-
+			String url = "http://test.payeco.com:9080/pay/payeco/ApiPayecoServerRSA";
+			//String url = "http://test.payeco.com:9080/services/ApiV2ServerRSA";
 			String GDYILIAN_CERT_PUB_64="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJ1fKGMV/yOUnY1ysFCk0yPP4bfOolC/nTAyHmoser+1yzeLtyYsfitYonFIsXBKoAYwSAhNE+ZSdXZs4A5zt4EKoU+T3IoByCoKgvpCuOx8rgIAqC3O/95pGb9n6rKHR2sz5EPT0aBUUDAB2FJYjA9Sy+kURxa52EOtRKolSmEwIDAQAB";
 			
 			String srcXml="";
